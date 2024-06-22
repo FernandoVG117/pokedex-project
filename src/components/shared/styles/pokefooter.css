@@ -1,18 +1,15 @@
 .pokefooter {
-    position: absolute;
-    bottom: 0;
     width: 100%;
+    background-color: #fff;
 }
 
 .pokefooter__red {
-    position: relative;
     width: 100%;
     height: 50px;
     background-color: #e80909;
 }
 
 .pokefooter__black {
-    position: relative;
     height: 40px;
     background-color: #000; 
     display: flex;
@@ -25,8 +22,8 @@
     background-color: #fff;
     border: 6px solid #000;
     border-radius: 50%;
-    bottom: 50%;
-    transform: translateY(-50%);
+    position: relative;
+    top: -20px; /* Ajusta la posición vertical del círculo */
 }
 
 .pokefooter__incircle {
@@ -36,7 +33,7 @@
     border-radius: 50%;
     background-color: #72727295;
     position: absolute;
-    bottom: 50%;
-    right: 50%;
-    transform: translate(50%, 50%);
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
 }

@@ -9,7 +9,7 @@ import Pokefooter from './components/shared/Pokefooter';
 function App() {
 
   return (
-    <>
+    <div className='app__container'>
       <Routes>
         <Route path='/' element={<HomePage />}/>
         <Route element={<ProtectedRoutes />}>
@@ -18,7 +18,7 @@ function App() {
         </Route>
       </Routes>
       <Pokefooter />
-    </>
+    </div>
   )
 }
 

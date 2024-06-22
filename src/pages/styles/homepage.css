@@ -1,0 +1,37 @@
+.homepage {
+    width: 100vw;
+    height: calc(100vh - 90px);
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.homepage__container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: calc(100vh - 90px);
+    justify-content: center;
+    align-items: center;
+    gap: 25px;
+}
+.homepage__title {
+    width: 75%;
+    max-width: 500px;
+}
+.homepage__hello {
+    color: #ff0000;
+}
+.homepage__presentation {
+    font-weight: 800;
+}
+.homepage__form {
+    display: flex;
+    gap: 5px;
+}
+.homepage__input {
+    box-shadow: 0 0 10px #ff2a2a65;
+}
+.homepage__btn {
+    padding: 5px 10px;
+    border-radius: 8px;
+    background-color: #ff0000b1;
+    color: #fff;
+}

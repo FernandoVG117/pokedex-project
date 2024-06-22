@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/pokeheader.css';
-import pokelogo from './styles/pokedex-logo.png'
+import pokelogo from '../../assets/pokedex-logo.png'
 
 const Pokeheader = () => {
   return (
