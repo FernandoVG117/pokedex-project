@@ -4,6 +4,16 @@
   padding: 0;
 }
 
+body {
+  cursor: url('./assets/cursor/pokecursor.png') 0 0, auto;
+  /* cursor: url('./assets/cursor/pokeball_cursor.cur'), auto; */
+}
+
+body:active, html:active {
+  cursor: url('./assets/cursor/pokepointer.png') 0 0, auto;
+  /* cursor: url('./assets/cursor/pokeball_pointer.cur') 0 0, auto; */
+}
+
 img {
   display: inline-block;
   max-width: 100%;

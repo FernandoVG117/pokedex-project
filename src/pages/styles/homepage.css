@@ -29,7 +29,21 @@
     height: calc(100vh - 90px);
     justify-content: center;
     align-items: center;
-    gap: 25px;
+    gap: 35px;
+}
+.homepage__box-text {
+    background-image: url('../../assets/textbox01.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 330px;
+    height: 150px;
+    justify-content: start;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding-top: 23px;
+    gap: 5px;
 }
 .homepage__title {
     width: 75%;
