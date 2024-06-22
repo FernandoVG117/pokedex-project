@@ -1,0 +1,18 @@
+.pokedex__wave span {
+    color: red;
+}
+
+.pokedex__filter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 10px;
+}
+
+.pokedex__container {
+    padding: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: space-evenly;
+}

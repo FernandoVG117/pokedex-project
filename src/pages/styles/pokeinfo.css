@@ -1,0 +1,23 @@
+.pokeinfo__stats-item {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.pokeinfo__stats-item span:nth-child(2) {
+    justify-self: end;
+}
+
+.pokeinfo__outbar {
+    grid-column: span 2;
+    height: 20px;
+    width: 100%;
+    border: 1px solid;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.pokeinfo__inbar {
+    width: 50%;
+    background-color: orange;
+    height: 100%;
+}
