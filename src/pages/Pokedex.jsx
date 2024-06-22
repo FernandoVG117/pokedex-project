@@ -38,15 +38,17 @@ const Pokedex = () => {
 
   return (
     <div className='pokedex'>
-      <h3 className='pokedex__title'><span className='}pokedex__wave'>Welcome</span> {trainer}, <span>**here you can find your favorite pokemon.**</span></h3>
-      <div className='pokedex__filter' >
-        <form onSubmit={handleSubmit}>
-          <input type="text" name="" ref={textInput} />
-          <button>Search</button>
-        </form>
-        <PokeSelector 
-          setTypeFilter={setTypeFilter}
-        />
+      <div className="pokedex__header">
+        <h3 className='pokedex__title'>Welcome <span className='pokedex__wave'>{trainer}</span>, <span>here you can find your favorite pokemon.</span></h3>
+        <div className='pokedex__filter' >
+          <form onSubmit={handleSubmit}>
+            <input type="text" ref={textInput} className='pokedex__input' />
+            <button className='pokedex__btn'>Search</button>
+          </form>
+          <PokeSelector 
+            setTypeFilter={setTypeFilter}
+          />
+        </div>
       </div>
       <div className="pokedex__container">
         {

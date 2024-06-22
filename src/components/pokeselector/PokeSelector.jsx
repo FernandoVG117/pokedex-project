@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from 'react'
 import useFetch from '../../hooks/useFetch';
-import './pokeselector.css';
+import './styles/pokeselector.css';
 
 const PokeSelector = ({setTypeFilter}) => {
 
@@ -22,7 +22,7 @@ const PokeSelector = ({setTypeFilter}) => {
 
   return (
     <select onChange={handleChange} ref={valueSelect}>
-        <option value="">all pokes</option>
+        <option value="">Type Pokemons</option>
         {
           types?.results.map((type) => (
             <option key={type.url} value={type.url}>{type.name}</option>
