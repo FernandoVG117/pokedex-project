@@ -1,12 +1,11 @@
 .pokecard {
     position: relative;
     width: 250px;
-    border: 5px solid;
     border-radius: 10px;
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: gray;
+    background-color: #fff;
     overflow: hidden;
 }
 
@@ -23,22 +22,28 @@
 
 .pokecard__name {
     padding-top: 50px;
+    font-size: 1.5rem;
     text-transform: capitalize;
+    font-weight: 900;
+    text-align: center;
 }
 
 .pokecard__types {
     margin: 5px 0;
     display: flex;
+    color: #000;
+    text-transform: capitalize;
 }
 
 .pokecard__txtType {
-    
+    color: #949494bc;
+    font-size: 0.9rem;
 }
 
 .pokecard__hr {
     width: 90%;
     margin: 10px 0;
-    border-color: #ffffffb1;
+    border-color: #9494943e;
 }
 
 .pokecard__stats {
@@ -53,26 +58,212 @@
 .pokecard__stats li {
     display: flex;
     flex-direction: column;
-    border: 1px solid red;
     align-items: center;
-    
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.pokecard__stats span:nth-child(1) {
+    color: #949494bc;
 }
 
 .slot2::before {
     content: '/';
     margin: 0 5px;
+    color: #000;
 }
 
 /* Colors */
 
-.grass {
-    background-color: green;
+/* ----- NORMAL ----- */
+.pokecard.normal {
+    border: 5px solid #434343bf;
+    color: #434343bf;
+}
+.pokecard__back.normal {
+    background: linear-gradient(#5a5a5aa7, #939393b0, #ffffff);
+}
+.pokecard__name.normal {
+    color: #434343bf;
+}
+.pokecard__stats.normal span:nth-child(2) {
+    color: #434343bf;
 }
 
-.fire {
-    background-color: red;
+/* ----- FIGHTING ----- */
+.pokecard.fighting {
+    border: 5px solid #b94b2f;
+}
+.pokecard__back.fighting {
+    background: linear-gradient(#b94b2fe2, #cd5435, #ffffff);
+}
+.pokecard__name.fighting {
+    color: #b94b2f;
+}
+.pokecard__stats.fighting span:nth-child(2) {
+    color: #b94b2f;
 }
 
-.water {
-    background-color: blue;
+/* ----- FLYING ----- */
+.pokecard.flying {
+    border: 5px solid #41a0d3;
+}
+.pokecard__back.flying {
+    background: linear-gradient(#398cb9df, #41a0d3c6, #fff);
+}
+.pokecard__name.flying {
+    color: #41a0d3;
+}
+.pokecard__stats.flying span:nth-child(2) {
+    color: #41a0d3;
+}
+
+/* ----- POISON ----- */
+.pokecard.poison {
+    border: 5px solid #7447a0;
+}
+.pokecard__back.poison {
+    background: linear-gradient(#6e3d9be2, #ad6fe9, #fff )
+}
+.pokecard__name.poison {
+    color: #7447a0;
+}
+.pokecard__stats.poison span:nth-child(2) {
+    color: #7447a0;
+}
+
+/* ----- GROUND ----- */
+.pokecard.ground {
+    border: 5px solid #936b3a;
+}
+.pokecard__back.ground {
+    background: linear-gradient(#b3975b, #eaca7f, #fff);
+}
+.pokecard__name.ground {
+    color: #936b3a;
+}
+.pokecard__stats.ground span:nth-child(2) {
+    color: #936b3a;
+}
+
+/* ----- ROCK ----- */
+.pokecard.rock {
+
+}
+.pokecard__back.rock {
+
+}
+
+
+/* ----- BUG ----- */
+.pokecard.bug {
+
+}
+.pokecard__back.bug {
+
+}
+
+/* ----- GHOST ----- */
+.pokecard.ghost {
+
+}
+.pokecard__back.ghost {
+
+}
+
+/* ----- STEEL ----- */
+.pokecard.steel {
+
+}
+.pokecard__back.steel {
+
+
+}
+
+/* ----- FIRE ----- */
+.pokecard.fire {
+
+}
+.pokecard__back.fire {
+    background: linear-gradient(#e51c1c, #c96b6b, #ffffff);
+}
+
+/* ----- WATER ----- */
+.pokecard.water {
+    border: 5px solid #62a6ff
+}
+.pokecard__back.water {
+    background: linear-gradient(#155fbf, #1676f3, #2884f9, #fff);
+}
+
+/* ----- GRASS ----- */
+.pokecard.grass {
+
+}
+.pokecard__back.grass {
+    background: linear-gradient(#6bc46b, #89b889, #ffffff);
+}
+
+/* ----- ELECTRIC ----- */
+.pokecard.electric {
+
+}
+.pokecard__back.electric {
+
+}
+
+/* ----- PJYSIC ----- */
+.pokecard.physic {
+
+}
+.pokecard__back.physic {
+
+}
+
+/* ----- ICE ----- */
+.pokecard.ice {
+
+}
+.pokecard__back.ice {
+
+}
+
+/* ----- DRAGON ----- */
+.pokecard.dragon {
+
+}
+.pokecard__back.dragon {
+
+}
+
+/* ----- DARK ----- */
+.pokecard.dark {
+
+}
+.pokecard__back.dark {
+
+}
+
+/* ----- FAIRY ----- */
+.pokecard.fairy {
+
+}
+.pokecard__back.fairy {
+
+}
+
+/* ----- STELLAR ----- */
+.pokecard.stellar {
+
+}
+.pokecard__back.stellar {
+
+}
+
+/* ----- UNKNOWN ----- */
+.pokecard.unknown {
+
+}
+.pokecard__back.unknown {
+
 }

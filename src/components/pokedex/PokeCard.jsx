@@ -20,12 +20,12 @@ const PokeCard = ({ url }) => {
   console.log(pokemon)
 
   return (
-    <article onClick={handleClick} className='pokecard'>
+    <article onClick={handleClick} className={`pokecard ${pokemon?.types[0].type.name}`}>
       <div className={`pokecard__back ${pokemon?.types[0].type.name}`}></div>
       <figure className='pokecard__img'>
         <img src={pokemon?.sprites.other['official-artwork'].front_default} alt={pokemon?.name} />
       </figure>
-      <h3 className='pokecard__name'>{pokemon?.name}</h3>
+      <h3 className={`pokecard__name ${pokemon?.types[0].type.name}`}>{pokemon?.name}</h3>
       <ul className='pokecard__types'>
         {
           pokemon?.types.map((type) => (
@@ -37,7 +37,7 @@ const PokeCard = ({ url }) => {
       </ul>
       <span className='pokecard__txtType'>Type</span>
       <hr className='pokecard__hr' />
-      <ul className="pokecard__stats">
+      <ul className={`pokecard__stats ${pokemon?.types[0].type.name}`}>
         {
           pokemon?.stats.map((stat) => (
             !stat.stat.name.includes('special') &&

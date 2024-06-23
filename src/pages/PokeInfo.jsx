@@ -26,8 +26,8 @@ const PokeInfo = () => {
         {
           pokemon?.stats.map((stat) => (
             <li key={stat.url} className='pokeinfo__stats-item'>
-              <span>{stat.stat.name}</span><span>{stat.base_stat} / 250</span>
-              <div className='pokeinfo__outbar'>
+              <span key={stat.url}>{stat.stat.name}</span><span>{stat.base_stat} / 250</span>
+              <div className='pokeinfo__outbar' key={stat.url}>
                 <div className='pokeinfo__inbar' style={{width: `${stat.base_stat / 2.5}%`}}></div>
               </div>
             </li>
