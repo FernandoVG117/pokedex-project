@@ -25,7 +25,7 @@ const PokeSelector = ({setTypeFilter}) => {
         <option value="">Type Pokemons</option>
         {
           types?.results.map((type) => (
-            <option key={type.url} value={type.url}>{type.name}</option>
+            <option key={type.url} value={type.url} className='pokeselector__list'>{type.name}</option>
           ))
         }
     </select>
