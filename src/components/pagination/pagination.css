@@ -1,11 +1,9 @@
 :root {
-    --color-blue-space-1: #3499ff;
-    --color-cream: #f1ebb8;
-    --color-vortex-1: #4aa151;
-    --color-vortex-2: #abf45c;
-    --red-test: #ff0000;
+    --color-btn-shadow: #a1a4a7;
+    --color-border: #515151;
+    --color-bg: #ff0000;
+    --color-text: #fff;
 }
-
 .pagination {
     display: flex;
     flex-direction: column;
@@ -24,23 +22,25 @@
 .pagination__btn {
     width: 20px;
     height: 20px;
-    border: 1px solid var(--color-vortex-1);
+    border: 1px solid var(--color-border);
     border-radius: 50%;
-    background-color: var(--color-vortex-2);
+    background-color: var(--color-bg);
     transition: transform 0.5s,
                 font-size 0.5s,
                 box-shadow 0.5s;
+    color: var(--color-text);
 }
 
 .pagination__btn-5 {
     width: 30px;
     height: 20px;
-    border: 1px solid var(--color-vortex-1);
+    border: 1px solid var(--color-border);
     border-radius: 7.5px;
-    background-color: var(--color-vortex-2);
+    background-color: var(--color-bg);
     transition: transform 0.5s,
                 font-size 0.5s,
                 box-shadow 0.5s;
+    color: var(--color-text);
 }
 
 .pagination__btn:hover,
@@ -48,7 +48,7 @@
     transform: scale(1.15);
     font-size: 0.85rem;
     font-weight: 600;
-    box-shadow: 0 0 2.5px 1.5px var(--color-blue-space-1);
+    box-shadow: 0 0 2.5px 1.5px var(--color-btn-shadow);
     transition: transform 0.5s,
                 font-size 0.5s,
                 box-shadow 0.5s;
