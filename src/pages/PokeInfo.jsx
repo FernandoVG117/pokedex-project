@@ -70,18 +70,18 @@ const PokeInfo = () => {
       </div>
       <div className="pokeinfo__box">
         <h2 className='pokeinfo__h2'>STATS</h2>
-        <ul key={`${pokemon?.name}-${pokemon?.id}`} className='pokeinfo__stats'>
+        <ul  className='pokeinfo__stats'>
           {
             pokemon?.stats.map((stat) => (
-              <>
-                <li key={`${stat}-list`} className='pokeinfo__stats-item'>
-                  <span key={`${stat.url}-span1`}>{stat.stat.name}</span>
-                  <span key={`${stat.url}-span2`}>{stat.base_stat} / 250</span>
-                  <div className='pokeinfo__outbar' key={`${stat.url}-out`}>
-                    <div className='pokeinfo__inbar' style={{width: `${stat.base_stat / 2.5}%`}} key={`${stat.url}-in`}></div>
+
+                <li key={`${stat.stat.url}`} className='pokeinfo__stats-item'>
+                  <span >{stat.stat.name}</span>
+                  <span >{stat.base_stat} / 250</span>
+                  <div className='pokeinfo__outbar' >
+                    <div className='pokeinfo__inbar' style={{width: `${stat.base_stat / 2.5}%`}} ></div>
                   </div>
                 </li>
-              </>
+
             ))
           }
         </ul>

@@ -20,9 +20,6 @@
     --fairy: linear-gradient(179.75deg, #d31c65 -19.96%, #d31c81 43.67%, #d31cc4 138.4%)
 }
 
-.pokeinfo {
-    border: 1px solid purple;
-}
 .pokeinfo__return {
     display: flex;
     width: 180px;
