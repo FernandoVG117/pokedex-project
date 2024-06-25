@@ -15,6 +15,7 @@
 .pokedex__filter {
     display: flex;
     flex-wrap: wrap;
+    align-items: center;
     justify-content: space-evenly;
     gap: 10px;
 }
@@ -36,4 +37,7 @@
     flex-wrap: wrap;
     gap: 20px;
     justify-content: space-evenly;
+}
+.pokedex__input-number {
+    width: 75px;
 }

@@ -42,12 +42,12 @@ const PokeInfo = () => {
         <li className='pokeinfo__weight'>
           <span className="pokeinfo__spantxt">Weight</span>
           <br />
-          <span className="pokeinfo__spanvalue">{pokemon?.weight}</span>
+          <span className="pokeinfo__spanvalue">{pokemon?.weight / 10} kg</span>
         </li>
         <li className='pokeinfo__weight'>
           <span className="pokeinfo__spantxt">Height</span>
           <br />
-          <span className="pokeinfo__spanvalue">{pokemon?.height}</span>
+          <span className="pokeinfo__spanvalue">{pokemon?.height / 10} m</span>
         </li>
       </ul>
       <div className="pokeinfo__type-skills">
@@ -87,6 +87,7 @@ const PokeInfo = () => {
         </ul>
       </div>
       <div className="pokeinfo__moves">
+        <h3 className="pokeinfo__type-title">Moves</h3>
         {
           pokemon?.moves.map((move) => (
             <div key={move.move.name} className="pokeinfo__move">{move.move.name}</div>

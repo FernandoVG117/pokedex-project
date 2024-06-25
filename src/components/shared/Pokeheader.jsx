@@ -2,6 +2,7 @@ import React from 'react';
 import './styles/pokeheader.css';
 import pokelogo from '../../assets/pokedex-logo.png'
 import { useNavigate } from 'react-router-dom';
+import DarkModeToggle from '../DarkMode/DarkModeToggle';
 
 const Pokeheader = () => {
 
@@ -22,6 +23,7 @@ const Pokeheader = () => {
         <div className="pokeheader__outcircle">
           <div className="pokeheader__incircle"></div>
         </div>
+        <DarkModeToggle />
       </div>
     </div>
   )

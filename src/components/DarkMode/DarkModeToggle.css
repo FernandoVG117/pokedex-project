@@ -1,0 +1,41 @@
+body.dark-mode {
+    background-color: #121212;
+    color: #ffffff;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+}
+
+button.btn__dlmode {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    margin-left: 50%;
+    border: none;
+    border-radius: 5px;
+    border: 1.5px solid #fff;
+    transition: all 0.5s;
+}
+
+button.btn__dlmode:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 7.5px #98d7e2;
+    transition: all 0.5s;
+}
+
+body.dark-mode button.btn__dlmode {
+    background-color: #ffffff;
+    border-radius: 50%;
+    color: #000000;
+}
+
+body button.btn__dlmode {
+    background-color: #000000;
+    border-radius: 50%;
+    color: #ffffff;
+}

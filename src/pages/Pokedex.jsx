@@ -60,7 +60,7 @@ const Pokedex = () => {
         </h3>
         <div className='pokedex__filter'>
           <div className='pokedex__items-per-page'>
-            <label htmlFor='itemsPerPage'>Items:</label>
+            <label htmlFor='itemsPerPage' className='pokedex__label'>Items:</label>
             <input 
               type='number' 
               id='itemsPerPage' 
